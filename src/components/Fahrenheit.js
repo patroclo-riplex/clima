@@ -21,16 +21,16 @@ const Fahrenheit = ({ units, setUnits }) => {
                         <li>{ actualDate }</li>
                     </ul>
                     <ul className="main-info">
-                        <li className="icon-container"><img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} /><p className="icon-info">{ description }</p></li>
+                        <li className="icon-container"><img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="espaf" /><p className="icon-info">{ description }</p></li>
                         <li className="temp-info"><strong className="temp">{ (temp * 1.8 + 32).toFixed(2)}°F</strong><p>Feels like: { (feels * 1.8 + 32).toFixed(2) }°F</p></li>
                         <ul className="aditional-info">
                             <div className="temp-range">
                                 <li>
-                                    <img src={Min} className="png"/>
+                                    <img src={Min} className="png" alt="minimo"/>
                                     <p><strong>Min temp: </strong><br />{ (temp_min * 1.8 + 32).toFixed(2) }°F</p>
                                 </li>
                                 <li>
-                                    <img src={Max} className="png"/>
+                                    <img src={Max} className="png" alt="maximo"/>
                                     <p><strong>Max temp: </strong><br />{ (temp_max * 1.8 + 32).toFixed(2) }°F</p>
                                 </li>
                             </div>
